@@ -1,13 +1,13 @@
-// User.java - Abstract base class demonstrating ABSTRACTION and ENCAPSULATION
+
+
 public abstract class User {
-    // ENCAPSULATION: Private fields with controlled access
+   
     private String userId;
     private String name;
     private String email;
     private String password;
     private String phoneNumber;
     
-    // Constructor
     public User(String userId, String name, String email, String password, String phoneNumber) {
         this.userId = userId;
         this.name = name;
@@ -16,12 +16,11 @@ public abstract class User {
         this.phoneNumber = phoneNumber;
     }
     
-    // ABSTRACTION: Abstract methods that subclasses must implement
+    
     public abstract void requestTransport(String destination);
     public abstract String getUserType();
     public abstract boolean canAccessAdminFeatures();
     
-    // Concrete method available to all subclasses
     public void displayUserInfo() {
         System.out.println("User Type: " + getUserType());
         System.out.println("ID: " + userId);
@@ -30,7 +29,7 @@ public abstract class User {
         System.out.println("Phone: " + phoneNumber);
     }
     
-    // ENCAPSULATION: Getters and Setters
+   
     public String getUserId() {
         return userId;
     }
@@ -53,7 +52,7 @@ public abstract class User {
         }
     }
     
-    // Protected method for password verification
+    
     protected boolean verifyPassword(String inputPassword) {
         return this.password.equals(inputPassword);
     }
