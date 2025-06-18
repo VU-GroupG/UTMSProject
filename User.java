@@ -17,6 +17,11 @@ public abstract class User {
     }
     
     
+    public User(String userId2, String name2) {
+        //TODO Auto-generated constructor stub
+    }
+
+
     public abstract void requestTransport(String destination);
     public abstract String getUserType();
     public abstract boolean canAccessAdminFeatures();
