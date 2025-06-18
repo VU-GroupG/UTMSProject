@@ -6,9 +6,26 @@ public class Student extends User {
         this.course = course;
     }
 
-    @Override
     public void requestTransport() {
         System.out.println("Student " + name + " is requesting a shuttle to class.");
+    }
+
+    // Implement the abstract method from User
+    @Override
+    public void requestTransport(String destination) {
+        System.out.println("Student " + name + " is requesting a shuttle to " + destination + ".");
+    }
+
+    // Implement the abstract method from User
+    @Override
+    public boolean canAccessAdminFeatures() {
+        return false;
+    }
+
+    // Implement the abstract method from User
+    @Override
+    public String getUserType() {
+        return "Student";
     }
 
     public String getCourse() {
