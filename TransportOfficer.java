@@ -4,7 +4,17 @@ public class TransportOfficer extends User {
     }
 
     @Override
-    public void requestTransport() {
-        System.out.println("Transport Officer " + name + " is managing transport schedules.");
+    public void requestTransport( String destination) {
+        System.out.println("Transport Officer " + getName() + " is managing transport schedules.");
+    }
+
+    @Override
+    public String getUserType() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean canAccessAdminFeatures() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

@@ -16,6 +16,10 @@ public abstract class User {
         this.phoneNumber = phoneNumber;
     }
     
+    public User(String userId, String name){
+        this.userId = userId;
+        this.name   = name;
+    }
     
     public abstract void requestTransport(String destination);
     public abstract String getUserType();
@@ -63,5 +67,17 @@ public abstract class User {
     
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
