@@ -24,6 +24,8 @@ This system provides a modular and extensible architecture that supports easy in
      
 Technologies Used 
 
+💻 Technologies Used 
+
     Language : Java
     Paradigm : Object-Oriented Programming (OOP)
     Design Patterns : Inheritance, Abstract Classes, Interfaces
