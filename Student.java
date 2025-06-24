@@ -7,8 +7,8 @@ public class Student extends User {
     }
 
     @Override
-    public void requestTransport() {
-        System.out.println("Student " + name + " is requesting a shuttle to class.");
+    public void requestTransport(String destination) {
+        System.out.println("Student " + getName() + " is requesting a shuttle to class.");
     }
 
     public String getCourse() {
@@ -17,5 +17,15 @@ public class Student extends User {
 
     public void setCourse(String course) {
         this.course = course;
+    }
+
+    @Override
+    public String getUserType() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    @Override
+    public boolean canAccessAdminFeatures() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
